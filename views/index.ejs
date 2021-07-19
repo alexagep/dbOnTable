@@ -27,7 +27,11 @@
             <% for(const info of customers){  %>
             
                 <tr>
+<<<<<<< HEAD
                     <form action="/allCustomers" method="put">
+=======
+                    <form>
+>>>>>>> bc8cbc4 (initial commit)
                         <td ><%= info.Id %> <input type="hidden" class="rowID" name="id" value="<%= info.Id %>"></td>
                         <td ><input type="text" name="firstName" class="firstName" value="<%= info.firstName %>"></td>
                         <td ><input type="text" name="lastName" class="lastName" value="<%= info.lastName %>"></td>
@@ -41,7 +45,11 @@
                     </tr>
                 <% } %> 
                 <tr>
+<<<<<<< HEAD
                     <form action="/allCustomers" method="put">
+=======
+                    <form>
+>>>>>>> bc8cbc4 (initial commit)
                         <td ></td>
                         <td ><input type="text" name="firstName" class="firstName" value=""></td>
                         <td ><input type="text" name="lastName" class="lastName" value=""></td>
@@ -64,7 +72,11 @@
             $.ajax({
                 url: "allCustomers",
                 method: "DELETE",
+<<<<<<< HEAD
                 data: { id:id },
+=======
+                data: { id },
+>>>>>>> bc8cbc4 (initial commit)
                 success: function(response){
                     alert(response);
                     location.reload();
